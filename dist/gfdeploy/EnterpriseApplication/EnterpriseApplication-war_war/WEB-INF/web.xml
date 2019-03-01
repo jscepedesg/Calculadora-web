@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Calcservlet</servlet-name>
+        <servlet-class>upc.edu.co.servlet.Calcservlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CalcRes</servlet-name>
+        <servlet-class>upc.edu.co.servlet.CalcRes</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CalcMul</servlet-name>
+        <servlet-class>upc.edu.co.servlet.CalcMul</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CalcDiv</servlet-name>
+        <servlet-class>upc.edu.co.servlet.CalcDiv</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Calcservlet</servlet-name>
+        <url-pattern>/Calcservlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CalcRes</servlet-name>
+        <url-pattern>/CalcRes</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CalcMul</servlet-name>
+        <url-pattern>/CalcMul</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CalcDiv</servlet-name>
+        <url-pattern>/CalcDiv</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
